@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: scale(0.9) translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen">
+    
+        <div class="w-64 bg-blue-900 text-white p-6">
+            <h2 class="text-2xl font-bold mb-6 text-center">Dashboard</h2>
+            <nav class="space-y-4">
+                <a href="Latihan1.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Home</a>
+                <a href="profil.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Profile</a>
+                <a href="latihan4.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Tabel Mahasiswa</a>
+                <a href="latihan6.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Input Formulir</a>
+                <a href="Berita.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Berita</a>
+                <a href="#" class="block py-2 px-4 bg-red-500 rounded-md hover:bg-red-600">Logout</a>
+            </nav>
+        </div>
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="max-w-4xl w-full bg-white rounded-3xl shadow-xl overflow-hidden animate-slide-in transform hover:scale-105 transition duration-500 ease-in-out">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <img class="h-72 w-72 object-cover rounded-full m-8 shadow-lg" src="img/foto.habibi.png" alt="Foto Profil">
+                    </div>
+                    <div class="p-10">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Habibirrohim</h2>
+                        <p class="text-2xl text-gray-600 mb-4">Profil Mahasiswa</p>
+                        
+                        <div class="mb-6">
+                            <p class="font-semibold text-xl">Nama:</p>
+                            <p class="text-lg">Habibirrohim</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="font-semibold text-xl">NIM:</p>
+                            <p class="text-lg">2300149</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="font-semibold text-xl">Kelas:</p>
+                            <p class="text-lg">B</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="font-semibold text-xl">Jenis Kelamin:</p>
+                            <p class="text-lg">Laki-laki</p>
+                        </div>
+                        
+                        <!-- Tombol Aksi -->
+                        <div class="mt-8 flex">
+                            <a href="#" class="bg-blue-500 text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">Edit Profil</a>
+                            <a href="#" class="ml-4 bg-gray-500 text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-gray-700 transition duration-300">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

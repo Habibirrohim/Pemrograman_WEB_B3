@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Belajar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Animasi Slide In -->
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen">
+
+    <div class="flex h-screen">
+
+        <div class="w-64 bg-blue-900 text-white p-6 flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-center">Dashboard</h2>
+                <nav class="space-y-4">
+                    <a href="Latihan1.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Home</a>
+                    <a href="profil.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Profile</a>
+                    <a href="latihan4.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Tabel Mahasiswa</a>
+                    <a href="latihan6.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Input Formulir</a>
+                    <a href="Berita.html" class="block py-2 px-4 bg-blue-700 rounded-md hover:bg-blue-800">Berita</a>
+                </nav>
+            </div>
+            <a href="#" class="block py-2 px-4 bg-red-500 rounded-md hover:bg-red-600 text-center">Logout</a>
+        </div>
+
+        <div class="flex-1 p-10">
+            <h1 class="text-3xl font-bold mb-8 text-gray-800">Berita Terkini</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-slide-in">
+                    <img src="img/AMI-270x270.png" alt="Gambar Berita 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2">Prodi Sistem Informasi Kelautan Unggul dalam Audit Mutu Internal UPI Kampus Daerah Serang</h2>
+                        <a href="#" class="text-blue-500 hover:underline">Baca selengkapnya</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.1s;">
+                    <img src="img/beritasik.png" alt="Gambar Berita 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2">                        
+                            <p class="text-2xl font-bold mb-2">Kabar terbaru dari perkembangan ekonomi global yang dapat mempengaruhi kondisi lokal.</p>
+                        </h2>
+                        <a href="#" class="text-blue-500 hover:underline">Baca selengkapnya</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.2s;">
+                    <img src="img/beritasik2.png" alt="Gambar Berita 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2">                        
+                            <p class="text-2xl font-bold mb-2">Pembaruan teknologi terkini yang mengubah cara kita berinteraksi dalam dunia digital.</p>
+                        </h2>
+                        <a href="#" class="text-blue-500 hover:underline">Baca selengkapnya</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden animate-slide-in">
+                    <img src="img/AMI-270x270.png" alt="Gambar Berita 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2">Prodi Sistem Informasi Kelautan Unggul dalam Audit Mutu Internal UPI Kampus Daerah Serang</h2>
+                        <a href="#" class="text-blue-500 hover:underline">Baca selengkapnya</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
