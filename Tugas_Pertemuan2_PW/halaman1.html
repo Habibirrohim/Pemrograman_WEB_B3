@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Panitia MOKAKU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran Panitia MOKAKU</h1>
+
+        <!-- Formulir Pendaftaran -->
+        <form id="formPanitia">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" required><br><br>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" placeholder="Masukkan NIM Anda" required><br><br>
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" placeholder="Masukkan Kelas Anda" required><br><br>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" placeholder="Masukkan Alamat Anda" required><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <hr>
+
+        <h2>Data Panitia:</h2>
+        <div id="dataPanitia">
+            <p>Nama: <span id="namaDisplay">Habibirrohim</span></p>
+            <p>NIM: <span id="nimDisplay">2300149</span></p>
+            <p>Kelas: <span id="kelasDisplay">B3</span></p>
+            <p>Alamat: <span id="alamatDisplay">Perumahan Bukit Permai</span></p>
+        </div>
+    </div>
+
+    <script src="latihan.js"></script>
+</body>
+</html>
